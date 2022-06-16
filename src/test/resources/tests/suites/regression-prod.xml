@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Regression" parallel="classes" thread-count="19" data-provider-thread-count="1">
-    <test name="Accenture - CxL Tests" group-by-instances="false">
+    <test name="Automation Suite PROD" group-by-instances="false">
         <parameter name="regressionEnvironment" value="PROD"/>
         <classes>
             <!-- SMOKE PROD -->
