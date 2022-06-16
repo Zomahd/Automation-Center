@@ -1,0 +1,32 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="classes" thread-count="19" data-provider-thread-count="1">
+    <test name="Accenture - CxL Tests" group-by-instances="false">
+        <parameter name="regressionEnvironment" value="PROD"/>
+        <classes>
+            <!-- SMOKE PROD -->
+            <!-- <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftComments"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.GlobalSections"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.ApprovalProcessProject"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.ApprovalProcessTaskContainer"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.ApprovalProcessIssuesContainer"/>
+-->
+            <!-- CLIENTS -->
+            <!--
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsABBV"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsAccor"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsACR"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsBBVA"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsBP"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsCW"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsJLR"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsKC"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsLoreal"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsMondelez"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsRoche"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsSainsbury"/>
+            <class name="com.automation.core.suite.center.tests.smokeProd.NewRequestReplicateDraftCommentsUnilever"/>
+            -->
+            <!-- SMOKE PROD -->
+        </classes>
+    </test>
+</suite>

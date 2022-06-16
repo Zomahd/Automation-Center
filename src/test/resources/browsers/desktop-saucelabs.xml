@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <browsers>
+        <browser service="saucelabs" browser="firefox" alias="Firefox 49.0 OS X 10.11 (saucelabs)">
+            <platform>OS X 10.11</platform>
+            <version>49.0</version>
+            <screenResolution>1024x768</screenResolution>
+        </browser>
+        <browser service="saucelabs" browser="firefox" alias="Firefox 49.0 OS X 10.11 - High Resolution (saucelabs)">
+            <platform>OS X 10.11</platform>
+            <version>49.0</version>
+            <screenResolution>2048x1536</screenResolution>
+        </browser>
+        <browser service="saucelabs" browser="chrome" alias="Chrome 54.0 Windows 10 (saucelabs)">
+            <platform>Windows 10</platform>
+            <version>54.0</version>
+        </browser>
+        <browser service="saucelabs" browser="firefox" alias="Firefox 49.0 Windows 10 (saucelabs)">
+            <platform>Windows 10</platform>
+            <version>49.0</version>
+        </browser>
+        <browser service="saucelabs" browser="edge" alias="Edge 14.14393 Windows 10 (saucelabs)">
+            <platform>Windows 10</platform>
+            <version>14.14393</version>
+        </browser>
+        <browser service="saucelabs" browser="internetExplorer" alias="IE 11 Windows 10 (saucelabs)">
+            <platform>Windows 10</platform>
+            <version>11.103</version>
+        </browser>
+        <browser service="saucelabs" browser="internetExplorer" alias="IE 11 Win 8.1 (saucelabs)">
+            <platform>Windows 8.1</platform>
+            <version>11.0</version>
+            <screenResolution>1280x1024</screenResolution>
+        </browser>
+        <browser service="saucelabs" browser="internetExplorer" alias="IE 10.0 Win 7 (saucelabs)">
+            <platform>Windows 7</platform>
+            <version>10.0</version>
+        </browser>
+        <browser service="saucelabs" browser="chrome" alias="Chrome 54 Win 7 (saucelabs)">
+            <platform>Windows 7</platform>
+            <version>54.0</version>
+        </browser>
+    </browsers>
+</settings>

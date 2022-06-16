@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="classes" thread-count="1" data-provider-thread-count="1">
+    <test name="Accenture - CxL Tests" group-by-instances="false">
+        <parameter name="regressionEnvironment" value="QA"/>
+        <classes>
+            <!--
+            <class name="com.automation.core.suite.center.tests.modules.request.client.automation.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.automation.NewRequestConvertProject"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.automation.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.automation.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.automation.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.abbv.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.abbv.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.abbv.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.abbv.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.accor.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.accor.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.accor.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.accor.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bayer.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bayer.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bayer.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bayer.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bbva.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bbva.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bbva.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bbva.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bp.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bp.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bp.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.bp.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.cw.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.cw.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.cw.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.cw.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.gsk.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.gsk.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.gsk.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.gsk.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.hershey.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.hershey.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.hershey.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.hershey.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.jlr.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.jlr.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.jlr.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.jlr.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.kc.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.kc.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.kc.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.kc.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.loreal.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.kc.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.mondelez.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.mondelez.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.mondelez.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.mondelez.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.roche.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.roche.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.roche.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.roche.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.sainsbury.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.sainsbury.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.sainsbury.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.sainsbury.NewDraftGeneral"/>
+
+            <class name="com.automation.core.suite.center.tests.modules.request.client.unilever.NewRequestGeneral"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.unilever.ReplicateRequestDetail"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.unilever.ReplicateRequestOngoing"/>
+            <class name="com.automation.core.suite.center.tests.modules.request.client.unilever.NewDraftGeneral"/>
+            -->
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <browsers>
+        <browser service="local" browser="chrome" alias="Chrome (local)" acceptSslCerts="true"
+                 acceptInsecureCerts="true" javascriptEnabled="true" applicationName="CxL" cssSelectorsEnabled="true"
+                 webStorageEnabled="true" nativeEvents="true" elementScrollBehavior="true" headless="headless"/>
+        <!--<browser service="local" browser="firefox" alias="Firefox (local)" />-->
+    </browsers>
+</settings>

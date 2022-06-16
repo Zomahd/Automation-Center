@@ -1,2 +1,2 @@
-# automation-center
+# Automation-Center
 Automation Center

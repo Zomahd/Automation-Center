@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <browsers>
+        <browser service="saucelabs" is-mobile="true" browser="iphone"
+                 alias="iPhone 6 Plus Portrait - iOS 9.2 (saucelabs)">
+            <platform>OS X 10.10</platform>
+            <version>9.2</version>
+            <deviceName>iPhone 6 Plus</deviceName>
+            <deviceOrientation>portrait</deviceOrientation>
+        </browser>
+        <browser service="saucelabs" is-mobile="true" browser="iphone"
+                 alias="iPhone 6 Plus Landscape - iOS 9.2 (saucelabs)">
+            <platform>OS X 10.10</platform>
+            <version>9.2</version>
+            <deviceName>iPhone 6 Plus</deviceName>
+            <deviceOrientation>landscape</deviceOrientation>
+        </browser>
+        <browser service="saucelabs" is-mobile="true" browser="iphone" alias="iPhone 5 Portrait - iOS 8.4 (saucelabs)">
+            <platform>OS X 10.10</platform>
+            <version>8.4</version>
+            <deviceName>iPhone 5</deviceName>
+            <deviceOrientation>portrait</deviceOrientation>
+        </browser>
+    </browsers>
+</settings>

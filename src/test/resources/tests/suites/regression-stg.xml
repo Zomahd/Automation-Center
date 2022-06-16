@@ -1,0 +1,216 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" parallel="classes" thread-count="19" data-provider-thread-count="1">
+    <test name="Accenture - CxL Tests" group-by-instances="false">
+        <parameter name="regressionEnvironment" value="STG"/>
+        <classes>
+            <!--<class name="NewRequestGeneral"/>
+            <class name="NewRequestConvertProject"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="NewRequestGeneral"/>
+            <class name="ReplicateRequestDetail"/>
+            <class name="ReplicateRequestOngoing"/>
+            <class name="NewDraftGeneral"/>
+            <class name="ApprovalProcessRequesterPrimaryContactNOTApprover"/>
+            <class name="ApprovalProcessApproverNOTRequesterNOTPrimaryContact"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApproverApprovesTask"/>
+            <class name="ApprovalProcessPrimaryContactAndApproverRejectsTask"/>
+            <class name="ApprovalProcessRequesterPrimaryContactAndApprover"/>
+            <class name="ApprovalProcessTaskWithATeamConfiguredAsApprover"/>
+
+            <class name="ErrorPage404"/>
+            <class name="ProjectsVisibility"/>
+            <class name="Milestones"/>
+
+            <class name="ProjectCommentsAndReplies"/>
+            <class name="RequestCommentsAndReplies"/>
+
+            <class name="NotificationsNoNewNotifications"/>
+            <class name="NotificationsUpdatesComments"/>
+            <class name="NotificationsChangeStatus"/>
+            <class name="NotificationsChangeStatusProjectRequest"/>
+            <class name="NotificationsChangeStatusTask"/>
+            <class name="NotificationsChangeStatusIssues"/>
+            <class name="Notifications"/>
+
+            <class name="NavigationAndProfileRequester"/>
+            <class name="NavigationAndProfileAdmin"/>
+            <class name="NavigationAndProfileSuperAdmin"/>
+
+            &lt;!&ndash;<class name="ManagerViewAccountSuperAdmin"/>
+            <class name="ManagerViewAccountAdmin"/>&ndash;&gt;
+            <class name="Dashboard"/>
+            <class name="DashboardHealthAndStatusChanges"/>
+            <class name="DashboardPanel"/>
+
+            <class name="NewTaskWF"/>
+            <class name="DashboardTaskHealthStatusChange"/>
+            <class name="TaskCommentsAndReplies"/>
+            <class name="TaskStatus"/>
+
+            <class name="NewRequestConvertedToTask"/>
+            <class name="DashboardTaskHealthStatusChange"/>
+            <class name="TaskCommentsAndReplies"/>
+            <class name="TaskStatus"/>
+
+            <class name="NewIssueCreatedOnWF"/>
+            <class name="DashboardIssueHealthStatusChange"/>
+            <class name="IssueCommentsAndReplies"/>
+            <class name="IssueStatus"/>
+
+            <class name="NewIssueMovedToContainer"/>
+            <class name="DashboardIssueHealthStatusChange"/>
+            <class name="IssueCommentsAndReplies"/>
+            <class name="IssueStatus"/>-->
+
+        </classes>
+    </test>
+</suite>

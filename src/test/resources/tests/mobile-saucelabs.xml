@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression">
+    <parameter name="browsers" value="mobile-saucelabs"/>
+    <suite-files>
+        <suite-file path="suites/regression-qa.xml"/>
+    </suite-files>
+</suite>
